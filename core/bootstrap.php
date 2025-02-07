@@ -2,6 +2,8 @@
 
 const DIR_CONFIG = '/../config';
 
+require_once __DIR__ . '/../vendor/autoload.php';
+
 
 spl_autoload_register(function ($className) {
     $paths = include __DIR__ . DIR_CONFIG . '/path.php';
